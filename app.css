@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500;600;700&family=Rubik+Distressed&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rajdhani', sans-serif;
+}
+body {
+  background-color: #f3f3f3;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  height: 70px;
+  background-color: #111344;
+  align-items: center;
+  color: #ef27a6;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Rubik Distressed', cursive;
+}
+.nav img {
+  width: 30px;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.75s;
+}
+.nav img:hover {
+  transform: rotate(90deg);
+}
+
+/* #111344 #52154E #120D31 #010400 #7B0828 #42033D #7371FC #020202 #EF27A6 font-family: 'Rajdhani', sans-serif; */
+.btn-container {
+  margin-top: 3rem;
+  text-align: center;
+  background-color: #fff;
+  padding: 2rem 0;
+  margin: 2rem;
+  border-radius: 10px;
+  box-shadow: 7px 3px 10px #dddde3;
+}
+.btns {
+  color: #fff;
+  padding: 1rem 5rem;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  border: none;
+  font-size: 1.5rem;
+}
+.bg-btn {
+  margin: 0.5rem;
+}
+.btns-bg {
+  width: 100%;
+  border: none;
+  color: #fff;
+  padding: 1rem 0;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.btns,
+.btns-bg:active {
+  outline: none;
+}
+.info {
+  margin: 0 0.5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  color: #fff;
+  padding: 0.5rem;
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  right: 0;
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  height: 100%;
+  font-size: 1.2rem;
+}
+.close-control {
+  position: relative;
+}
+.close {
+  border: 2px solid greenyellow;
+  padding: 3px 7px;
+  border-radius: 4px;
+  margin-top: 14rem;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+}
+.close a {
+  color: #fff;
+  text-decoration: none;
+}
+@media screen and (max-width: 900px) {
+  .btns {
+    margin-bottom: 0.5rem;
+  }
+}
